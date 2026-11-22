@@ -1,0 +1,141 @@
+
+.news-card-skeleton {
+  display: flex;
+  width: 100%;
+  min-height: 230px;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Image */
+.skeleton-image {
+  width: 34%;
+  min-width: 34%;
+  min-height: 230px;
+  border-radius: 18px 0 0 18px;
+}
+
+/* Content */
+.skeleton-content {
+  flex: 1;
+  padding: 30px;
+  min-width: 0;
+}
+
+/* Category and date */
+.skeleton-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.skeleton-category {
+  width: 115px;
+  height: 25px;
+  border-radius: 6px;
+}
+
+.skeleton-date {
+  width: 90px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+/* Headline */
+.skeleton-title {
+  width: 85%;
+  height: 23px;
+  border-radius: 5px;
+  margin-bottom: 23px;
+}
+
+/* Description */
+.skeleton-description {
+  width: 95%;
+  height: 15px;
+  border-radius: 5px;
+  margin-bottom: 22px;
+}
+
+/* Source */
+.skeleton-source {
+  width: 85px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+/* Shimmer animation */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f8f8f8 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-animation 1.5s infinite linear;
+}
+
+@keyframes shimmer-animation {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-card-skeleton {
+    min-height: 180px;
+  }
+
+  .skeleton-image {
+    width: 35%;
+    min-width: 35%;
+    min-height: 180px;
+  }
+
+  .skeleton-content {
+    padding: 18px;
+  }
+
+  .skeleton-top {
+    margin-bottom: 20px;
+  }
+
+  .skeleton-title {
+    width: 95%;
+    height: 17px;
+    margin-bottom: 18px;
+  }
+
+  .skeleton-description {
+    width: 90%;
+    height: 12px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-card-skeleton {
+    flex-direction: column;
+  }
+
+  .skeleton-image {
+    width: 100%;
+    min-width: 100%;
+    min-height: 170px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .skeleton-content {
+    padding: 18px;
+  }
+}
