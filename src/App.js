@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={
+          <Route path="/newsite" element={
             <div>
               <Sidebar />
               <div className="main-content">
@@ -30,7 +30,7 @@ function App() {
               </div>
             </div>
           } />
-          <Route path="/search" element={<Search />} />
+          <Route path="newsite/search" element={<Search />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>

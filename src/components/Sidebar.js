@@ -37,7 +37,7 @@ const Sidebar = () => {
   };
   function searchHandler(e){
     e.preventDefault()
-    navigate(`/search?query=${search}`)
+    navigate(`/newsite/search?query=${search}`)
   }
   function handleEnter(e){
     if (e.key === 'Enter') {
